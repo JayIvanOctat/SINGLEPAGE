@@ -1,0 +1,90 @@
+@import url(fonts.google.com);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-image:url(https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fblack-and-white-pattern&psig=AOvVaw2dR7rFsl6ODWm6a2hvuFI2&ust=1700285511017000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCKiG2qSnyoIDFQAAAAAdAAAAABAI):
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    
+    border: 5px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2cm;
+    color: black;
+    user-select: none;
+
+}
+
+.navigation a{
+    position: relative;
+    font-size: 5mm;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform-origin: left;
+    transform: scale(0);
+    transition: transform.5s;
+}
+.navigation a:hover::after{
+    transform: scale(1);
+}
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 5;
+    color: black;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 1s;
+
+}
+
+.navigation .btnLogin-popup:hover{
+    background: black;
+    color: white;
+
+}
